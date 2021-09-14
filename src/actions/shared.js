@@ -7,7 +7,7 @@ const AUTH_ID = "tylermcginnis";
 
 export function handleInitialData() {
   return (dispatch) => {
-    getInitialData().then(({ tweets, users }) => {
+    return getInitialData().then(({ users, tweets }) => {
       dispatch(receiveTweets(tweets));
       dispatch(receiveUsers(users));
       dispatch(setAuthUser(AUTH_ID));

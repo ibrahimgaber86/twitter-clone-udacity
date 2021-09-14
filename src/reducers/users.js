@@ -1,6 +1,6 @@
 import { RECEIVE_USERS } from "../actions/users";
 
-export function userReducer(state = {}, action) {
+export function users(state = {}, action) {
   const { type, users } = action;
   switch (type) {
     case RECEIVE_USERS:
