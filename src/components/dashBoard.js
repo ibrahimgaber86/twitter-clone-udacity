@@ -5,7 +5,6 @@ import Tweet from "./tweet";
 
 class DashBoard extends Component {
   render() {
-    console.log(this.props);
     const { tweetIds } = this.props;
     return (
       <div>
